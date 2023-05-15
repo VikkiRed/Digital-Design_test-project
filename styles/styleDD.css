@@ -63,7 +63,7 @@ p { font-size: 18px;}
     height: 30px;
     border-radius: 50%;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-    background-image: url('/img/dark-light.svg');
+    background-image: url('../img/dark-light.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 25px;
@@ -164,7 +164,7 @@ p { font-size: 18px;}
 }
 
 .header__main__icon { 
-    background-image: url("/img/fon.png");
+    background-image: url("../img/fon.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
