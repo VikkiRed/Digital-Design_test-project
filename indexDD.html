@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Design test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styleDD.css">
+</head>
+<body class="light-theme">
+    <div class="body__wrapper">
+
+        <header>
+            <nav class="header__nav__container">
+                <div class="header__menu__hamburger">
+                    <span></span>
+                </div> 
+                <div class="logo__container">
+                    <div class="logo__icon">CarpShop</div>
+                </div>
+
+                    <ul class="nav__menu__list">
+                        <li><a class="nav__menu__link" href="#about">О нас</a></li>
+                        <li><a class="nav__menu__link" href="#fish">Рыба для пруда</a></li>
+                        <li><a class="nav__menu__link" href="#plants">Растения для пруда</a></li>
+                        <li><a class="nav__menu__link" href="#aquariums">Аквариумистика</a></li>
+                        <li><a class="nav__menu__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                
+                <div class="theme__button__container">
+                    <button id="theme-toggle" onclick="toggleTheme()" title="Выберите тему"></button>
+                </div>
+                
+            </nav>    
+            <article class="header__main">
+                <div class="header__main__info">
+                    <h1>
+                        CarpShop - более 10 лет профессиональной деятельности.  
+                        Более 1 000 постоянных клиентов. 
+                    </h1>
+                    <h2>
+                        Поможем с обустройством водоёма или аквариума. 
+                        Удобная доставка, выезд специалиста, все товары всегда в наличии
+                    </h2>
+                </div>
+                
+                <div class="header__main__icon"></div>
+            </article>
+        </header>    
+
+        <main>
+            <section id="about">
+                <article class="about__info">
+                    <h2 class="about__info__title">О нас</h2>   
+                    <p>
+                        У нас Вы найдёте всё необходимое для обустройства своего домашнего аквариума.
+                        На страницах нашего интернет-магазина представлен ассортимент наиболее известных 
+                        мировых производителей товаров для аквариумистики.
+                            <p> - самые последние новинки аквариумного оборудования;</p>
+                            <p> - любые виды растений и тропических рыб;</p>
+                            <p> - химия для воды и лекарства для фауны;</p>
+                        <p>и еще много других полезных товаров.</p>
+                    </p>
+
+                    <p>
+                        Каждый аквариумист знает, насколько важно своевременно заметить изменение состава воды, сменить воду или включить обогрев.
+                        Наши специалисты всегда помогут Вам обустроить панорамный аквариум как в домашних условиях, так и в крупном офисе. 
+                        В нашем магазине Вы найдёте всё необходимое оборудование для снижения трудозатрат при содержании аквариума.
+                    </p>
+                    <p>
+                        CarpShop является уникальным поставщиком любой живой рыбы для дачного пруда, озера или рыбоводного хозяйства. 
+                        Многолетний опыт наших специалистов позволяет оптимально подобрать необходимое оборудование для фильтрации и аэрации воды, 
+                        прикорма и размножения рыб. С нашей помощью Вы сможете быстро и качественно обустроить небольшой пруд с пёстрыми рыбками 
+                        на территории приусадебного участка или создать декоративные каскадные фонтаны. 
+                        А доставка рыбы нашими силами в любую точку Ленинградской области станет приятным дополнением.
+                    </p>
+                    <p>
+                        Зарыбление пруда – важный процесс, от которого зависит, насколько качественно будет расти и плодиться малёк.
+                        Только тщательный подбор рыбы и плотность посадки, анализ состава воды, УФ-стерилизация и высадка наилучшей прудовой растительности
+                        позволит Вам избежать гибели, и создать красивый пруд со здоровой рыбой. 
+                    </p>       
+                </article>
+            </section>    
+
+            <section id="fish">
+                <h2 class="fish__title">Рыба для пруда</h2>
+                <div class="fish__cards__container">
+
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish1.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Карп кои (Asagi)</h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 11.11.2021
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+                      
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish2.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Карп кои (Bekko) </h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 11.12.2022
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish3.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Карп кои (Doitsu)  </h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 01.11.2012
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish4.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Мальки карпа кои</h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 11.08.2023
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+                      
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish5.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Карась</h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 07.07.2022
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish6.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Карп кои (Koromo)</h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 06.05.2022
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish7.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Карп кои 5-15см</h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 03.10.2020
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish8.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Карп кои 15-25см</h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 11.11.2020
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish9.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Карп кои 25-30см</h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 11.11.2020
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+                
+                    <article class="fish__card">
+                        <img class="fish__card__icon" src="img/fish_catalog/fish10.png" alt="Product Image">
+                        <div class="fish__card__title">
+                            <h3>Карп кои 30-35см</h3>
+                        </div>
+                        <div class="fish__card__subtitle" id="date">
+                            Дата добавления: 10.05.2023
+                        </div>
+                        <button class="fish__card__button">Купить</button>
+                    </article>
+
+                </div>  
+                <div class="modalFish">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h2 class="modal__title">Форма заказа</h2>
+                        <form class="fish__buyForm">
+                            <label for="quantity">Количество:</label><br/>
+                            <input type="number" id="quantity" name="quantity" min="1" max="50" required><br/><br/>
+                        
+                            <label>Цвет:</label><br/>
+                            <div class="modal__color__wrapper">
+                                <input type="radio" id="color1" name="color" value="red" required>
+                                <label for="color1">Red</label><br/>
+                            
+                                <input type="radio" id="color2" name="color" value="blue">
+                                <label for="color2">Gold</label><br/>
+                                
+                                <input type="radio" id="color2" name="color" value="blue">
+                                <label for="color2">Mix</label><br/>
+
+                                <input type="radio" id="color3" name="color" value="green">
+                                <label for="color3">White</label><br/>
+                            </div>
+                            <br/><br/>
+                            <label for="comment">Комментарий:</label><br/>
+                            <textarea id="comment" name="comment" maxlength="2000"></textarea><br/><br/>
+                            
+                            <button class="confirm-btn fishBuyButton" type="submit">Купить</button>
+                        </form>
+                    </div>
+                </div>
+                <div  class="success-message">
+                    <p class="success-message__content">Ваш заказ принят!</p>
+                </div>
+                  
+                  
+            </section>
+
+            <section id="plants">
+                <h2 class="plants__title">Растения для пруда</h2>
+                <div class="plants__cards__container">
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant1.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Nymphaea lotus «Red»</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant2.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Nymphaea lotus «Green»</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 10.05.2021
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant3.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Nymphaea gardneriana</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 10.04.2021
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant4.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Nymphaea micrantha</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 09.09.2021
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant5.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Рогоз обыкновенный</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 09.09.2020
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant6.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Нимфея «Santarem»</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 04.09.2020
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant7.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Nymphaea rudgeana</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 05.09.2021
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant8.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Nymphaea alba</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 09.07.2023
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant9.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Нимфея Gold</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 09.08.2021
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant10.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Кувшинка rudgeana</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 09.09.2022
+                        </div>
+                    </article>
+
+                    <article class="plants__card">
+                        <img class="plants__card__icon" src="img/plants_catalog/plant3.png" alt="Product Image">
+                        <div class="plants__card__info">
+                            <div class="plants__card__title">
+                                <h3>Нимфея «Santarem»</h3>
+                            </div>
+                            <button class="plants__card__button">Купить</button>
+                        </div>
+                        <div class="plants__card__subtitle" id="date">
+                            Дата добавления: 08.06.2019
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="modalPlants">
+                    <div class="modal-contentPlants">
+                      <span class="closePlants">&times;</span>
+                      <h2 class="modal__titlePlants">Форма заказа растений</h2>
+                        <form class="plants__buyForm">
+                            <label for="quantity">Количество:</label><br/>
+                            <input type="number" id="quantity" name="quantity" min="1" required><br/><br/>
+                        
+                            <label>Цвет:</label><br/>
+                            <div class="modal__color__wrapper">
+                                <input type="radio" id="color1" name="color" value="red" required>
+                                <label for="color1">WHITE</label><br/>
+                            
+                                <input type="radio" id="color2" name="color" value="blue">
+                                <label for="color2">PINK</label><br/>
+                                
+                                <input type="radio" id="color2" name="color" value="blue">
+                                <label for="color2">YELLOW</label><br/>
+
+                                <input type="radio" id="color3" name="color" value="green">
+                                <label for="color3">RED</label><br/>
+
+                                <input type="radio" id="color3" name="color" value="green">
+                                <label for="color3">PURPLE</label><br/>
+
+                            </div>
+                            <br/><br/>
+                            <label for="comment">Комментарий:</label><br/>
+                            <textarea id="comment" name="comment" maxlength="2000"></textarea><br/><br/>
+                            
+                            <button class="confirm-btn plantsBuyButton" type="submit">Купить</button>
+                        </form>
+                    </div>
+                </div>
+                <div  class="success-message2">
+                    <p class="success-message2__content">Ваш заказ принят!</p>
+                </div>                
+            </section>
+
+            <section id="aquariums">
+                <h2 class="aquariums__title">Аквариумистика</h2>
+                <div class="aquariums__cards__container">
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar1.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Аквариум стандарт</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar2.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Аквариум мини</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar3.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Аквариум круг</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar4.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Аквариум комфорт+</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar5.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Аквариум высокий</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar6.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Террариум</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar7.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Декор</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar8.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Иллюминатор</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar9.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Аквариум компакт</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar10.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Аквариум сфера</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar11.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Лента LED</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar12.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Освещение 3D</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar13.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Грунт №1</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar14.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Грунт №2</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar15.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Грунт №3</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                    <article class="aquariums__card">
+                        <img class="aquariums__card__icon" src="img/aquarium_catalog/aquar16.png" alt="Product Image">
+                        <div class="aquariums__card__info">
+                            <div class="aquariums__card__title">
+                                <h3>Грунт №4</h3>
+                            </div>
+                            <button class="aquariums__card__button">Купить</button>
+                        </div>
+                        
+                        <div class="aquariums__card__subtitle" id="date">
+                            Дата добавления: 11.05.2021
+                        </div>
+                    </article>
+
+                </div>
+                <div class="modalAquariums">
+                    <div class="modal-contentAquariums">
+                      <span class="closeAquariums">&times;</span>
+                      <h2 class="modal__titleAquariums">Закажи сейчас!</h2>
+                        <form class="aquariums__buyForm">
+                            <label for="quantity">Количество:</label><br/>
+                            <input type="number" id="quantity" name="quantity" min="1" required><br/><br/>
+                        
+                            <label>Цвет:</label><br/>
+                            <div class="modal__color__wrapper">
+                                <input type="radio" id="color1" name="color" value="red" required>
+                                <label for="color1">Бесцветный</label><br/>
+                            
+                                <input type="radio" id="color2" name="color" value="blue">
+                                <label for="color2">Бронза</label><br/>
+                                
+                                <input type="radio" id="color2" name="color" value="blue">
+                                <label for="color2">Зеленый</label><br/>
+                            </div>
+                            <br/><br/>
+                            <label for="comment">Комментарий:</label><br/>
+                            <textarea id="comment" name="comment" maxlength="2000"></textarea><br/><br/>
+                            
+                            <button class="aquariumsBuyButton" type="submit">Купить</button>
+                        </form>
+                    </div>
+                </div>
+                <div  class="success-message3">
+                    <p class="success-message3__content">Ваш заказ принят!</p>
+                </div>                
+            </section>
+
+            <section id="contacts">
+                <h2 class="contacts__title">Контакты</h2>
+
+                <div  class="contacts__icon" >
+                    <img src="img/map.png" alt="">
+                </div>
+                <div class="contacts__info">
+                    <h3><strong>Телефон:</strong></h3> 
+                    <a>8 (800) 200 00 07</a>
+                    <h3><strong>Адрес:</strong></h3> 
+                    <p>г. Санкт-Петербург, Ленинский пр-т, д. 26</p>   
+                    <h3><strong>Электронная почта:</strong></h3>
+                    <a>hello@carpkoi.ru</a>
+                </div>
+            </section>
+
+            <footer>
+                <hr class="hr-line">
+                <nav class="footer__nav">
+                    <ul class="footer__nav__menu__list">
+                        <li><a class="footer__nav__menu__link" href="#aquariums">Аквариумистика</a></li>
+                        <li><a class="footer__nav__menu__link" href="#fish">Рыба для пруда</a></li>
+                        <li><a class="footer__nav__menu__link" href="#plants">Растения для пруда</a></li>
+                        <li><a class="footer__nav__menu__link" href="#about">О нас</a></li>
+                        <li><a class="footer__nav__menu__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                    <hr class="hr-line">
+                    <p class="copyright__footNote">© Viktoria R. 2023</p>
+                   
+            </footer>
+
+            <button id="btnTop" class="btnTop" title="Вернуться наверх">Наверх</button>
+
+        </main>   
+    </div>  
+    <script src="/scripts/indexDD.js"></script>          
+</body>
+</html>
