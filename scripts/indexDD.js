@@ -79,7 +79,6 @@ const menuBody = document.querySelector ('.nav__menu__list');
     });
   }
   function onMenuLinkClick(e) {
-    const menuLink = e.target;
     if (burgerMenu.classList.contains('_active')) {
       document.body.classList.remove('_lock');
       burgerMenu.classList.remove('_active');
@@ -109,7 +108,7 @@ function getDayInfo(dateString) {
     
     return `${dayOfWeek}, ${weekOfYear} неделя ${monthOfYear} ${year} года`;
   }
-  const dateElements = document.querySelectorAll("#date");
+  const dateElements = document.querySelectorAll(".date");
   for (let i = 0; i < dateElements.length; i++) {
     const date = dateElements[i].innerHTML;
     const formattedDate = getDayInfo(date);
