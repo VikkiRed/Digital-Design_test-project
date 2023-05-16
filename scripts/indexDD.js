@@ -93,7 +93,7 @@ if(menuLinks.length > 0) {
     menuLink.addEventListener('click', onMenuLinkClick);
   });
 }
-  
+ 
 
 //DATA CHANGE
 
